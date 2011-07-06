@@ -4,6 +4,8 @@
 
 Click _TOGGLE SEARCH TYPE_ link to toggle between _Find People_ and _Search with Google_.
 
+> **Install**: <http://go.wittman.org/f2wt>
+
 So far, this user script was tested in Google Chrome 12 and Firefox 5 (Greasemonkey required) (on OS X).
 
 Feedback is welcome.
