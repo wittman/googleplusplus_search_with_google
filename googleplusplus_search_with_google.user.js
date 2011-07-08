@@ -4,7 +4,7 @@
 // @namespace      http://wittman.org/projects/googleplusplus_search_with_google
 // @include        *plus.google.com*
 // @description    
-// @version        0.1.0
+// @version        0.1.1
 // ==/UserScript==
 
 function searchWithGoogle(){
@@ -30,7 +30,7 @@ function searchWithGoogle(){
 /****** Load jQuery then callback upon load function ******/
 function addJQuery(callback){
 	var script = document.createElement("script");
-	script.setAttribute("src", "http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js");
+	script.setAttribute("src", protocol + "ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js");
 	script.addEventListener('load', function() {
 		var script = document.createElement("script");
 		script.textContent = "(" + callback.toString() + ")();";
@@ -40,4 +40,5 @@ function addJQuery(callback){
 }
 
 /****** Call Load jQuery + callback function ******/
+var protocol = window.location.protocol + '//';
 addJQuery(searchWithGoogle);
