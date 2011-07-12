@@ -4,11 +4,11 @@
 // @namespace      http://wittman.org/projects/googleplusplus_search_with_google
 // @include        *plus.google.com*
 // @description    
-// @version        0.1.1
+// @version        0.1.2
 // ==/UserScript==
 
 function searchWithGoogle(){
-	var search_box_new_html = '<form style="display:none" id="ggp__search_with_google" method="get" action="http://www.google.com/search?" target="_blank"><input type="hidden" name="hl" value="en-GB"><input type="hidden" name="q" value="site:plus.google.com"><input class="a-b-fi-O a-fi-O a-G-O wa-O-wa" id="gpp__search-box" autocomplete="off" type="text" maxlength="2048" name="q" value="Search with Google" placeholder="Search with Google"></form> <a style="float:right;font-weight:bold;font-size:9px" id="gpp__search_with_google_swap">TOGGLE SEARCH TYPE</a>';
+	var search_box_new_html = '<form style="display:none" id="ggp__search_with_google" method="get" action="http://www.google.com/search?" target="_blank"><input type="hidden" name="hl" value="en-GB"><input type="hidden" name="q" value="site:plus.google.com -buzz -&quot;google reader&quot;"><input class="a-b-fi-O a-fi-O a-G-O wa-O-wa" id="gpp__search-box" autocomplete="off" type="text" maxlength="2048" name="q" value="Search with Google" placeholder="Search with Google"></form> <a style="float:right;font-weight:bold;font-size:9px" id="gpp__search_with_google_swap">TOGGLE SEARCH TYPE</a>';
 	
 	var sbox = $('#search-box').after(search_box_new_html);
 	var sbox_new = $('#ggp__search_with_google');
