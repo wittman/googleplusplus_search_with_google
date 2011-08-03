@@ -14,6 +14,10 @@ Feedback is welcome.
 
 ## Change Log
 
+### Version 0.1.3
+
+- Changes made today by Google introduced breaking DOM tree changes. All modules needed updating and are now fixed. FIX
+
 ### Version 0.1.2
 
 - Added filter to screen out buzz and Google Reader in the query. NEW
