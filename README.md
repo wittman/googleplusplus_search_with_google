@@ -14,6 +14,10 @@ Feedback is welcome.
 
 ## Change Log
 
+### Version 0.1.4
+
+- Changes made by Google recently introduced breaking DOM tree changes. Critical update needed. FIX
+
 ### Version 0.1.3
 
 - Changes made today by Google introduced breaking DOM tree changes. All modules needed updating and are now fixed. FIX
